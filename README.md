@@ -35,22 +35,6 @@ This repository contains my learning notes, lab setup, configurations, screensho
 
 ## Lab Architecture
 
-```text
-                    +----------------------+
-                    |   Windows 10 Host    |
-                    +----------+-----------+
-                               |
-                     Oracle VirtualBox
-                               |
-        +----------------------+----------------------+
-        |                      |                      |
-        |                      |                      |
-+---------------+     +----------------+     +------------------+
-| Wazuh OVA     |     | Windows 10 VM  |     | Kali Linux VM    |
-|               |     |                |     |                  |
-| Manager       |<----| Wazuh Agent    |     | Wazuh Agent      |
-| Indexer       |     | Sysmon         |---->|                  |
-| Dashboard     |<----------------------------- Logs -----------|
 +---------------+
 ```
 
