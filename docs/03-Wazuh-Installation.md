@@ -79,7 +79,7 @@ I confirmed that:
 
 ### Wazuh Dashboard
 
-![Wazuh Dashboard](../images/lab-setup/wazuhdashboard.png)
+![Wazuh Dashboard](../images/lab-setup/wazuh-dashboard.png)
 
 ---
 
