@@ -36,17 +36,31 @@ This repository contains my learning notes, lab setup, configurations, screensho
 ## Lab Architecture
 ![SOC Home Lab Architecture](images/lab-setup/lab-architecture.png)
 
-```
 
 ## Repository Structure
 
 ```text
-docs/
-images/
-README.md
+SOC-Home-Lab-Wazuh/
+│
+├── README.md
+├── LICENSE
+├── docs/
+│   ├── 01-Introduction.md
+│   ├── 02-Lab-Setup.md
+│   ├── 03-Wazuh-Installation.md
+│   ├── 04-Windows-Agent.md
+│   ├── 05-Sysmon.md
+│   ├── 06-Generating-Logs.md
+│   ├── 07-Alert-Analysis.md
+│   ├── 08-Regex.md
+│   └── 09-Decoders.md
+│
+└── images/
+    ├── .gitkeep
+    └── lab-setup/
+        ├── lab-architecture.png
+        └── virtualbox-lab.png
 ```
-
----
 
 ## Topics Covered
 
