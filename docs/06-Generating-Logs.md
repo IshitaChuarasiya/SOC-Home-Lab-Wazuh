@@ -182,7 +182,7 @@ The generated events were visible with:
 
 ## Screenshot
 
-![Wazuh Received Events](../images/lab-setup/windowsw-events-log.png)
+![Wazuh Received Events](../images/lab-setup/windows-events-log.png)
 ![Wazuh Received Events](../images/lab-setup/sysmon-events-log.png)
 
 ---
