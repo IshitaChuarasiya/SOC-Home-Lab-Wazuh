@@ -2,60 +2,77 @@
 
 ## Objective
 
-The objective of this lab is to build a beginner-friendly Security Operations Center (SOC) environment for learning Wazuh and Sysmon.
+The objective of this lab is to build a beginner-friendly Security Operations Center (SOC) environment using Wazuh and Sysmon for security monitoring, log collection, alert analysis, and hands-on learning.
+
+---
+
+## Lab Environment
+
+| Component | Details |
+|----------|---------|
+| Host Operating System | Windows 10 |
+| Virtualization Software | Oracle VirtualBox |
+| Wazuh Version | 4.14.6 OVA |
+| Endpoint 1 | Windows 10 Lab VM |
+| Endpoint 2 | Kali Linux VM |
+| Windows Monitoring | Wazuh Agent + Sysmon |
+| Kali Monitoring | Wazuh Agent |
 
 ---
 
 ## Lab Architecture
 
-The lab environment consists of three virtual machines running in Oracle VirtualBox.
+The lab consists of one Wazuh server and two monitored endpoints.
 
-| Machine | Purpose |
-|---------|---------|
-| Wazuh v4.14.6 OVA | Wazuh Manager, Indexer, and Dashboard |
-| Kali Linux | Security testing machine with Wazuh Agent |
-| Windows 10 Lab | Endpoint monitored using Wazuh Agent and Sysmon |
-
----
-
-## Virtualization
-
-The lab environment is hosted using **VirtualBox**.
+- **Wazuh OVA** acts as the Manager, Indexer, and Dashboard.
+- **Windows 10 Lab VM** is monitored using the Wazuh Agent and Sysmon.
+- **Kali Linux VM** is monitored using the Wazuh Agent.
+- Both endpoints send logs to the Wazuh Server for analysis.
 
 ---
 
-## Environment Overview
+## Lab Architecture Diagram
 
-- Host Operating System: Windows 10
-- Virtualization Software: Oracle VirtualBox
-- Wazuh Version: 4.14.6
-- Windows Endpoint: Windows 10
-- Linux Endpoint: Kali Linux
-- Log Monitoring: Sysmon + Wazuh Agent
+![SOC Home Lab Architecture](../images/lab-setup/lab-architecture.png)
 
-## Software Used
+---
 
-| Software | Purpose |
-|----------|---------|
-| Wazuh | Security monitoring platform |
-| Sysmon | Windows event logging |
-| VirtualBox | Virtualization software |
-| Kali Linux | Security testing |
-| Windows 10 | Endpoint machine |
+## VirtualBox Environment
+
+The complete lab is hosted inside Oracle VirtualBox.
+
+### Virtual Machines
+
+| Virtual Machine | Purpose |
+|----------------|---------|
+| Wazuh v4.14.6 OVA | Manager, Indexer and Dashboard |
+| Windows 10 Lab | Endpoint Monitoring |
+| Kali Linux | Security Testing & Monitoring |
+
+---
+
+## VirtualBox Screenshot
+
+![VirtualBox Lab](../images/lab-setup/virtualbox-lab.png)
 
 ---
 
 ## Learning Goals
 
-- Understand the Wazuh architecture
-- Connect a Windows endpoint to Wazuh
-- Monitor security events
-- Generate alerts
-- Learn Regex
-- Build custom decoders
+During this lab I will learn:
+
+- Wazuh Architecture
+- Wazuh Agent Installation
+- Sysmon Configuration
+- Windows Event Monitoring
+- Linux Log Monitoring
+- Alert Investigation
+- Regex Basics
+- Custom Decoders
+- Rule Creation
 
 ---
 
-## Notes
+## Summary
 
-This lab is intended for learning purposes and will be updated as I continue learning more Wazuh features.
+This lab provides a complete beginner-friendly SOC environment for learning Wazuh. As I continue learning, this repository will be updated with new configurations, custom decoders, rules, and security monitoring use cases.
