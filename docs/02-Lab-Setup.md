@@ -8,13 +8,13 @@ The objective of this lab is to build a beginner-friendly Security Operations Ce
 
 ## Lab Architecture
 
-The lab consists of the following machines:
+The lab environment consists of three virtual machines running in Oracle VirtualBox.
 
 | Machine | Purpose |
 |---------|---------|
-| Windows 10 | Endpoint monitored by Wazuh Agent |
-| Kali Linux | Security testing and administration |
-| Wazuh Server | Collects logs, analyzes events, and generates alerts |
+| Wazuh v4.14.6 OVA | Wazuh Manager, Indexer, and Dashboard |
+| Kali Linux | Security testing machine with Wazuh Agent |
+| Windows 10 Lab | Endpoint monitored using Wazuh Agent and Sysmon |
 
 ---
 
@@ -23,6 +23,15 @@ The lab consists of the following machines:
 The lab environment is hosted using **VirtualBox**.
 
 ---
+
+## Environment Overview
+
+- Host Operating System: Windows 10
+- Virtualization Software: Oracle VirtualBox
+- Wazuh Version: 4.14.6
+- Windows Endpoint: Windows 10
+- Linux Endpoint: Kali Linux
+- Log Monitoring: Sysmon + Wazuh Agent
 
 ## Software Used
 
