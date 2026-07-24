@@ -35,7 +35,7 @@ This repository contains my learning notes, lab setup, configurations, screensho
 
 ## Lab Architecture
 ![SOC Home Lab Architecture](images/lab-setup/lab-architecture.png)
-+---------------+
+
 ```
 
 ## Repository Structure
